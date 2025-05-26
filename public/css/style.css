@@ -1,0 +1,117 @@
+   body {
+       margin: 0;
+       background: black;
+       color: white;
+       font-family: "Manrope", sans-serif;
+       font-weight: 400;
+       overflow: hidden;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       height: 100vh;
+       user-select: none;
+   }
+
+   #scoreEl,
+   #highScoreEl {
+       font-size: 24px;
+       margin: 10px 0;
+   }
+
+   #gameContainer {
+       position: relative;
+       width: 1024px;
+       height: 576px;
+       display: none;
+   }
+
+   canvas {
+       background: hwb(0 0% 100%);
+       display: block;
+       border: 2px solid #00bcd4;
+       border-radius: 10px;
+       box-shadow: 0 4px 77px 0 rgba(0, 188, 212, 87.2);
+       padding: 10px;
+   }
+
+   #gameOver {
+       position: absolute;
+       top: 40%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+       color: rgb(255, 0, 0);
+       font-size: 100px;
+       font-weight: 900;
+       font-style: italic;
+       display: none;
+       z-index: 10;
+       text-shadow: 0 0 10px red;
+   }
+
+   #restartBtn,
+   #startBtn {
+       background: white;
+       color: black;
+       box-shadow: 0 4px 77px 0 rgba(0, 188, 212, 87.2);
+   }
+
+   #restartBtn,
+   #startBtn,
+   #pauseBtn,
+   #resumeBtn {
+       cursor: pointer;
+       padding: 10px 20px;
+       font-size: 20px;
+       border: none;
+       border-radius: 5px;
+       margin-top: 10px;
+       user-select: none;
+   }
+
+   #pauseBtn,
+   #resumeBtn {
+       background: rgba(0, 0, 0, 0);
+       color: white;
+       position: absolute;
+       right: 0%;
+       top: 0;
+   }
+
+   #restartBtn {
+       display: none;
+       position: absolute;
+       top: 60%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+       z-index: 10;
+   }
+
+   #pauseBtn,
+   #resumeBtn {
+       display: none;
+       margin-top: 10px;
+   }
+
+   #instructions {
+       font-size: 18px;
+       margin: 10px 0;
+       text-align: center;
+       padding: 10px;
+   }
+
+   .Score-group {
+       display: none;
+       /* Hide Score-group by default */
+       margin: 10px 0;
+   }
+
+   #scoreEl {
+       position: relative;
+       right: 50px;
+   }
+
+   #highScoreEl {
+       position: relative;
+       left: 100px;
+   }

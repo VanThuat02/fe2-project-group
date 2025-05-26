@@ -1,0 +1,16 @@
+Thư viện và công cụ cần cài đặt với Vite:
+
+1 Node.js và npm: Đã cài đặt từ hướng dẫn trước (tải từ nodejs.org nếu chưa có).
+
+2 Vite: npm create vite@latest fe2-project-group-Thuat-Dong -- --template react
+cd fe2-project-group-Thuat-Dong
+
+3 React và ReactDOM: npm install react react-dom
+
+4 React Router DOM: npm install react-router-dom
+
+5 Tailwind CSS: npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+
+6 Font Awesome:
+ npm install @fortawesome/fontawesome-free
